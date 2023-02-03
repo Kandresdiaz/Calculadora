@@ -5,63 +5,79 @@
 }
 body{
 background-image: url(./imagenes/fondo.jpg);
-
 }
-#contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-    width: 100%;
-}
-
 #encabezado{
-    background: white;
-    margin-left: 80px;
+    background: #150050;
+    color: white;
     border: 1px solid;
     height: 60px;
-    width:200px;
+    padding: 2px 20px;
     display: flex;
-    text-align: center;
     align-items: center;
-    justify-content: center;
     border-radius: 10%;
 }
-
+#contenedor {
+    background-color: rgba(254, 254, 255, 0.281) ;
+    border: 10px solid rgba(0, 0, 0, 0.651)  ;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 70%;
+    margin: 90px auto;
+}
+.operador{
+    /* padding:10px 20px; */
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 50% ;
+    background:#150050;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    /* border: 1px solid; */
+}
 #pantalla{
-    border: 1px solid;
+    width: 70%;
+    border: 6px solid;
     height: 100px;
     border-radius: 20%;
     display: flex;
-    text-align: center;
-    justify-content: center;
-    background: white   ;
+    align-items: center;
+    background: rgb(226, 10, 208);
+    padding-left: 10px;
+    font-size: 3rem;
+    overflow: hidden;
 }
 
 #botones{
     display: grid;
-  grid-template-columns: repeat(5,1fr);
-  height: 100px;
+   grid-template-columns: repeat(5,1fr);
 }
- input:hover{
-border: 2px solid green;
+.boton{
+    height: 70px;
+    width: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.boton:hover{
+    border: 6px solid white;
+}
+ .operador:hover{
+border: 6px solid white;
+
 }
 /* #operaciones input:hover{
     border: 2px solid green;
 } */
-.operaciones input{
-    height: 50px;
-    width: 50px;
-    margin: 20px;
-    border-radius: 50% ;
-    background: red;
-    color: white;
-    /* border: 1px solid; */
-}
+
 #botones input{
     border-radius: 10%;
     margin: 10px;
     height: 50px;
-    background: blue;
+    background:#3F0071;
     color: white;
 }
