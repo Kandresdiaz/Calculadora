@@ -10,10 +10,10 @@ background-image: url(./imagenes/fondo.jpg);
     background: #150050;
     color: white;
     border: 1px solid;
-    height: 60px;
-    padding: 2px 20px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-radius: 10%;
 }
 #contenedor {
@@ -23,10 +23,9 @@ background-image: url(./imagenes/fondo.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 60vh;
-    width: 70%;
-    margin: 90px auto;
+    padding: 30px;
+    width: 80%;
+    margin: 50px auto;
 }
 .operador{
     /* padding:10px 20px; */
@@ -41,27 +40,40 @@ background-image: url(./imagenes/fondo.jpg);
     /* border: 1px solid; */
 }
 #pantalla{
-    width: 70%;
+    width: 80%;
     border: 6px solid;
     height: 100px;
     border-radius: 20%;
-    display: flex;
-    align-items: center;
     background: rgb(226, 10, 208);
     padding-left: 10px;
     font-size: 3rem;
-    overflow: hidden;
 }
 
 #botones{
+   width: 80%;
     display: grid;
-   grid-template-columns: repeat(5,1fr);
+   /* grid-template-columns: repeat(5,1fr); */
+
+   grid-template-columns: repeat(
+    auto-fit,
+    minmax(
+        150px,
+        1fr
+    )
+   );
+
+   gap: 10px;
+   
+   justify-items: center;
 }
 .boton{
     height: 70px;
     width: 70px;
     font-size: 20px;
     font-weight: bold;
+    border-radius: 10%;
+    background:#3F0071;
+    color: white;
 }
 .boton:hover{
     border: 6px solid white;
@@ -74,10 +86,3 @@ border: 6px solid white;
     border: 2px solid green;
 } */
 
-#botones input{
-    border-radius: 10%;
-    margin: 10px;
-    height: 50px;
-    background:#3F0071;
-    color: white;
-}
